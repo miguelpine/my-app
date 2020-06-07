@@ -12,17 +12,27 @@
     background: #d9d9d9;
     box-shadow: 20px 20px 60px #b8b8b8,
         -20px -20px 60px #fafafa;
+    transition: ease-in-out 0.3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.profile__picture:hover {
+    transform: translate3d(0, -1%, 0);
+    opacity: 0.7;
 }
 
 .profile__title {
+    margin-top: 40px;
     padding: 20px 25px;
     border-radius: 15px;
     width: fit-content;
     background: linear-gradient(145deg, #e8e8e8, #c3c3c3);
     box-shadow: 20px 20px 60px #b8b8b8,
         -20px -20px 60px #fafafa;
+    transition: ease-in-out 0.3s;
 }
 
 .profile__title:hover {
     opacity: 0.3;
+    transform: translate3d(0, -1%, 0);
 }
