@@ -6,12 +6,10 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <Profile />
-        </Route>
         <Route path="/about">Mafalda</Route>
         <Route path="/dashboard">Cenas</Route>
-        <Route>404</Route>
+        <Route exact path="/" component={Profile} />
+        <Route path="*" exact component={Profile} />
       </Switch>
     </BrowserRouter>
   );
